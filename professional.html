@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inter Global Technology Solutions</title>
+  <style>
+    /* CSS styles can be added here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #555;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .service-description {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .service-description.show {
+      display: block;
+    }
+  </style>
+  <script>
+    // JavaScript code can be added here
+    document.addEventListener("DOMContentLoaded", function() {
+      const services = document.querySelectorAll(".service");
+
+      services.forEach(function(service) {
+        service.addEventListener("click", function() {
+          const description = this.querySelector(".service-description");
+          description.classList.toggle("show");
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Inter Global Technology Solutions</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>Welcome to Inter Global Technology Solutions. We are a leading provider of Business Process Outsourcing (BPO) services, dedicated to helping businesses achieve operational efficiency and growth.</p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li class="service">
+          Inbound and Outbound Call Center Services
+          <div class="service-description">
+            <p>Our call center services offer efficient handling of both inbound and outbound calls. We ensure exceptional customer service, telemarketing, lead generation, and more.</p>
+          </div>
+        </li>
+        <li class="service">
+          Customer Support and Help Desk
+          <div class="service-description">
+            <p>We provide comprehensive customer support solutions, including help desk services, ticket management, troubleshooting, and customer relationship management (CRM).</p>
+          </div>
+        </li>
+        <li class="service">
+          Virtual Assistant Services
+          <div class="service-description">
+            <p>Our virtual assistants are skilled professionals who can handle administrative tasks, scheduling, research, data entry, and other support services remotely.</p>
+          </div>
+        </li>
+        <li class="service">
+          Data Entry and Management
+          <div class="service-description">
+            <p>We offer accurate and efficient data entry and management services, including data processing, data cleansing, database management, and data analysis.</p>
+          </div>
+        </li>
+        <li class="service">
+          Content Moderation and Data Annotation
+          <div class="service-description">
+            <p>With our content moderation and data annotation services, we ensure the quality and accuracy of user-generated content, image recognition, sentiment analysis, and more.</p>
+          </div>
+        </li>
+        <li class="service">
+          Back Office Support
+          <div class="service-description">
+            <p>Our back office support services cover various administrative tasks, document management, invoice processing, HR support, and other operational functions.</p>
+          </div>
+        </li>
+        <li class="service">
+          Technical Support
+          <div class="service-description">
+            <p>We provide technical support services to assist customers with software, hardware, and IT-related issues through different channels, including phone, chat, and email.</p>
+          </div>
+        </li>
+        <li class="service">
+          E-commerce Support
+          <div class="service-description">
+            <p>Our e-commerce support services help businesses manage online stores, order processing, inventory management, product listing, customer inquiries, and more.</p>
+          </div>
+        </li>
+        <li class="service">
+          Quality Assurance and Testing
+          <div class="service-description">
+            <p>We offer comprehensive quality assurance and testing services to ensure the reliability, functionality, and usability of software applications and digital products.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>For inquiries and more information about our BPO services, please feel free to reach out to us:</p>
+      <p>Email: info@interglobalsolutions.com</p>
+      <p>Phone: 123-456-7890</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Inter Global Technology Solutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
